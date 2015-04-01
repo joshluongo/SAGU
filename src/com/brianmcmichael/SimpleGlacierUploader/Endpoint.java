@@ -25,7 +25,7 @@ public enum Endpoint
 	USWESTNCA ("us-west-1"), 
 	EUIRELAND ("eu-west-1"), 
 	APTOKYO ("ap-northeast-1");
-	
+	APSYDNEY ("ap-southeast-2");
 	private Endpoint(String endpoint)
 	{
 		this.endpoint = endpoint;
