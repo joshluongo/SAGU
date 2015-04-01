@@ -56,7 +56,10 @@ public class Endpoints {
         {
         	endString = "https://glacier.ap-northeast-1.amazonaws.com/";
         }        
-        
+        if(endpt == 5)
+        {
+        	endString = "https://glacier.ap-southeast-2.amazonaws.com/";
+        }
         return endString;
 	}
 	
@@ -84,7 +87,11 @@ public class Endpoints {
         {
         	locString = "APTOKYO";
         }        
-        
+        if(endpt == 5)
+        {
+        	locString = "APSYDNEY";
+        }        
+
         return locString;
 	}
 
@@ -119,7 +126,12 @@ public class Endpoints {
         if(endpt == 4)
         {
         	endString = "https://sqs.ap-northeast-1.amazonaws.com/";
+        } 
+        if(endpt == 5)
+        {
+        	endString = "https://sqs.ap-southeast-2.amazonaws.com/";
         }        
+       
         
         return endString;
 	}
@@ -147,7 +159,12 @@ public class Endpoints {
         if(endpt == 4)
         {
         	endString = "https://sns.ap-northeast-1.amazonaws.com/";
+        }
+        if(endpt == 5)
+        {
+        	endString = "https://sns.ap-southeast-2.amazonaws.com/";
         }        
+                
         
         return endString;
 	}
